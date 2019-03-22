@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Finbourne.Extensions.Okta.Sdk</AssemblyName>
+        <RootNamespace>Finbourne.Extensions.Okta.Sdk</RootNamespace>
+        <Copyright>FINBOURNE Technology 2019</Copyright>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Okta.Sdk" Version="1.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+      
+    </ItemGroup>
+
+</Project>

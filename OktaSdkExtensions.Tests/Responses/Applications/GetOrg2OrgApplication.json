@@ -1,0 +1,98 @@
+{
+  "id": "uniqueorg2orgappid",
+  "name": "okta_org2org",
+  "label": "Example Org2Org App to testtargetorg",
+  "status": "ACTIVE",
+  "lastUpdated": "2019-02-17T09:50:25.000Z",
+  "created": "2017-10-17T16:47:22.000Z",
+  "accessibility": {
+    "selfService": false,
+    "errorRedirectUrl": "example://errorredirecturl",
+    "loginRedirectUrl": "example://loginRedirectUrl"
+  },
+  "visibility": {
+    "autoSubmitToolbar": false,
+    "hide": {
+      "iOS": true,
+      "web": true
+    },
+    "appLinks": {
+      "login": true
+    }
+  },
+  "features": [
+    "PUSH_NEW_USERS",
+    "PUSH_USER_DEACTIVATION",
+    "GROUP_PUSH",
+    "REACTIVATE_USERS",
+    "IMPORT_USER_SCHEMA",
+    "IMPORT_NEW_USERS",
+    "PUSH_PROFILE_UPDATES"
+  ],
+  "signOnMode": "SAML_2_0",
+  "credentials": {
+    "userNameTemplate": {
+      "template": "user.getInternalProperty(\"id\") + \"@testorganisation.okta.com\"",
+      "type": "BUILT_IN"
+    },
+    "signing": {
+      "kid": "UNiqueKidForApplication"
+    }
+  },
+  "settings": {
+    "app": {
+      "acsUrl": "https://testtargetorg.okta.com/sso/saml2/uniquetargetsaml2id",
+      "audRestriction": "https://www.okta.com/saml2/service-provider/uniqueoktaserviceproviderid",
+      "baseUrl": "https://testtargetorg.okta.com"
+    },
+    "notifications": {
+      "vpn": {
+        "network": {
+          "connection": "DISABLED"
+        },
+        "message": "Test message",
+        "helpUrl": "example://helpurl"
+      }
+    },
+    "signOn": {
+      "defaultRelayState": "https://testtargetorg.okta.com/home/bookmark/targetbookmarkappid/1234",
+      "ssoAcsUrlOverride": "ExampleSSOAcsUrlOverride",
+      "audienceOverride": "ExampleAudienceOverride",
+      "recipientOverride": "ExampleRecipientOverride",
+      "destinationOverride": "ExampleDestinationOverride"
+    }
+  },
+  "_links": {
+    "help": {
+      "href": "https://testorganisation-admin.okta.com/app/okta_org2org/uniqueorg2orgappid/setup/help/SAML_2_0/external-doc",
+      "type": "text/html"
+    },
+    "metadata": {
+      "href": "https://testorganisation.okta.com/api/v1/apps/uniqueorg2orgappid/sso/saml/metadata",
+      "type": "application/xml"
+    },
+    "appLinks": [
+      {
+        "name": "login",
+        "href": "https://testorganisation.okta.com/home/okta_org2org/uniqueorg2orgappid/12345",
+        "type": "text/html"
+      }
+    ],
+    "groups": {
+      "href": "https://testorganisation.okta.com/api/v1/apps/uniqueorg2orgappid/groups"
+    },
+    "logo": [
+      {
+        "name": "medium",
+        "href": "https://ok4static.oktacdn.com/bc/globalFileStoreRecord?id=gfs92x9k0gMuz9Pn21t7",
+        "type": "image/png"
+      }
+    ],
+    "users": {
+      "href": "https://testorganisation.okta.com/api/v1/apps/uniqueorg2orgappid/users"
+    },
+    "deactivate": {
+      "href": "https://testorganisation.okta.com/api/v1/apps/uniqueorg2orgappid/lifecycle/deactivate"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "type": "RESOURCE_ACCESS",
+    "id": "examplepolicyruleuniqueid1",
+    "status": "ACTIVE",
+    "name": "Default policy rule name",
+    "priority": 1,
+    "created": "2017-08-15T13:29:40.000Z",
+    "lastUpdated": "2017-08-15T13:29:40.000Z",
+    "system": false,
+    "conditions": {
+      "people": {
+        "users": {
+          "include": [
+            "includedUser"
+          ],
+          "exclude": [
+            "excludedUser"
+          ]
+        },
+        "groups": {
+          "include": [
+            "EVERYONE"
+          ],
+          "exclude": [
+            "excludedGroupUser"
+          ]
+        }
+      },
+      "grantTypes": {
+        "include": [
+          "implicit"
+        ],
+        "exclude": [
+          "grantTypeToExclude"
+        ]
+      },
+      "scopes": {
+        "include": [
+          "*"
+        ],
+        "exclude": [
+          "scopesExclude"
+        ]
+      }
+    },
+    "actions": {
+      "token": {
+        "accessTokenLifetimeMinutes": 60,
+        "refreshTokenLifetimeMinutes": 5,
+        "refreshTokenWindowMinutes": 10080
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://testorganisation.okta.com/api/v1/authorizationServers/exampleOktaUniqueAuthServerId/policies/ExampleAuthorisationServerPolicyUid/rules/examplepolicyruleuniqueid1",
+        "hints": {
+          "allow": [
+            "GET",
+            "PUT",
+            "DELETE"
+          ]
+        }
+      },
+      "deactivate": {
+        "href": "https://testorganisation.okta.com/api/v1/authorizationServers/exampleOktaUniqueAuthServerId/policies/ExampleAuthorisationServerPolicyUid/rules/examplepolicyruleuniqueid1/lifecycle/deactivate",
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        }
+      }
+    }
+  }
+]

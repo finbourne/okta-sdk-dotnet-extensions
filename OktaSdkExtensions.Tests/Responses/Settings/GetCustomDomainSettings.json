@@ -1,0 +1,8 @@
+{
+  "customDomain": "ExampleCustomDomain",
+  "txtRecord": "exampleTxtRecord",
+  "txtSubdomainRecord": "exampletxtSubdomainRecord",
+  "validationStatus": "exampleValidationStatus",
+  "oktaSubdomain": "exampleOkta",
+  "cname": "exampleCname"
+}

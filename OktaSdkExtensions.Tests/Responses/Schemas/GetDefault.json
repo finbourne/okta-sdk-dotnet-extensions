@@ -1,0 +1,115 @@
+{
+  "id": "https://exampledomain.okta.com/meta/schemas/user/default",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "user",
+  "title": "User",
+  "description": "Okta user profile template with default permission settings",
+  "lastUpdated": "2018-11-30T09:55:44.000Z",
+  "created": "2017-02-27T08:47:49.000Z",
+  "definitions": {
+    "custom": {
+      "id": "#custom",
+      "type": "object",
+      "properties": {
+        "exampleProperty1": {
+          "title": "Example Property One",
+          "description": "The first example property",
+          "type": "string",
+          "required": true,
+          "mutability": "READ_WRITE",
+          "scope": "NONE",
+          "permissions": [
+            {
+              "principal": "SELF",
+              "action": "READ_ONLY"
+            }
+          ],
+          "master": {
+            "type": "OKTA"
+          }
+        },
+        "exampleProperty2": {
+          "title": "Example Property Two",
+          "description": "The second example property",
+          "type": "string",
+          "mutability": "READ_WRITE",
+          "scope": "NONE",
+          "permissions": [
+            {
+              "principal": "SELF",
+              "action": "READ_ONLY"
+            }
+          ],
+          "master": {
+            "type": "OKTA"
+          }
+        }
+      },
+      "required": [
+        "client",
+        "employee"
+      ]
+    },
+    "base": {
+      "id": "#base",
+      "type": "object",
+      "properties": {
+        "login": {
+          "title": "Username",
+          "type": "string",
+          "required": true,
+          "mutability": "READ_WRITE",
+          "scope": "NONE",
+          "minLength": 5,
+          "maxLength": 100,
+          "permissions": [
+            {
+              "principal": "SELF",
+              "action": "READ_ONLY"
+            }
+          ],
+          "master": {
+            "type": "PROFILE_MASTER"
+          }
+        },
+        "firstName": {
+          "title": "First name",
+          "type": "string",
+          "required": true,
+          "mutability": "READ_WRITE",
+          "scope": "NONE",
+          "minLength": 1,
+          "maxLength": 50,
+          "permissions": [
+            {
+              "principal": "SELF",
+              "action": "READ_WRITE"
+            }
+          ],
+          "master": {
+            "type": "PROFILE_MASTER"
+          }
+        }
+      },
+      "required": [
+        "login",
+        "firstName",
+        "lastName",
+        "email"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "profile": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/custom"
+        },
+        {
+          "$ref": "#/definitions/base"
+        }
+      ]
+    }
+  }
+}

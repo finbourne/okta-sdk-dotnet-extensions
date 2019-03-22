@@ -1,0 +1,33 @@
+{
+  "localeString": "en",
+  "availableLocaleStrings": {
+    "cs": "Čeština",
+    "da": "Dansk",
+    "de": "Deutsch",
+    "el": "Ελληνικά",
+    "en": "English",
+    "es": "Español",
+    "fi": "Suomi",
+    "fr": "Français",
+    "hu": "Magyar",
+    "id": "Bahasa Indonesia",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ko": "한국어",
+    "ms": "Malay",
+    "nb": "Norsk Bokmål",
+    "nl_NL": "Nederlands",
+    "pl": "Język polski",
+    "pt_BR": "Português",
+    "ro": "Română",
+    "ru": "Русский",
+    "sv": "Svenska",
+    "th": "ภาษาไทย",
+    "tr": "Türkçe",
+    "uk": "Українська",
+    "vi": "Tiếng Việt",
+    "zh_CN": "简体中文",
+    "zh_TW": "繁體中文"
+  },
+  "localeSetByUser": false
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "trustedoriginuniqueId",
+    "name": "Test Trusted Origin",
+    "origin": "https://originurl",
+    "scopes": [
+      {
+        "type": "CORS"
+      }
+    ],
+    "status": "ACTIVE",
+    "created": "2019-03-04T16:44:23.000Z",
+    "createdBy": "createdUserId",
+    "lastUpdated": "2019-03-04T16:44:23.000Z",
+    "lastUpdatedBy": "modifiedByUserId",
+    "_links": {
+      "self": {
+        "href": "https://exampledomain.okta.com/api/v1/trustedOrigins/trustedoriginuniqueId",
+        "hints": {
+          "allow": [
+            "GET",
+            "PUT",
+            "DELETE"
+          ]
+        }
+      },
+      "deactivate": {
+        "href": "https://exampledomain.okta.com/api/v1/trustedOrigins/trustedoriginuniqueId/lifecycle/deactivate",
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        }
+      }
+    }
+  }
+]

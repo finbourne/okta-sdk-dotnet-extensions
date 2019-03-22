@@ -1,0 +1,50 @@
+{
+  "tokenType": "orn:okta:token:ssws",
+  "clientName": "Okta API",
+  "status": "ACTIVE",
+  "created": "2019-03-04T08:59:20.000Z",
+  "lastUpdated": "2019-03-04T08:59:20.000Z",
+  "expiresAt": "2019-04-03T08:59:20.000Z",
+  "name": "Example created token name",
+  "id": "ExampleUniqueTokenId",
+  "token": "Example Secret Token",
+  "_links": {
+    "self": {
+      "href": "https://exampledomain-admin.okta.com/api/internal/tokens/ExampleUniqueTokenId",
+      "hints": {
+        "allow": [
+          "GET"
+        ]
+      }
+    },
+    "user:ui": {
+      "href": "https://exampledomain-admin.okta.com/admin/user/profile/view/CreatingUserId"
+    },
+    "revoke": {
+      "href": "https://exampledomain-admin.okta.com/api/internal/tokens/ExampleUniqueTokenId/revoke",
+      "hints": {
+        "allow": [
+          "POST"
+        ]
+      }
+    },
+    "user": {
+      "href": "https://exampledomain.okta.com/api/v1/users",
+      "hints": {
+        "allow": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ]
+      }
+    }
+  },
+  "_embedded": {
+    "user": {
+      "id": "CreatingUserId",
+      "displayName": "Example User",
+      "login": "example.user@exampledomain.com",
+      "role": "Super Admin"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "testclaimid1",
+    "name": "custom-claim-name",
+    "status": "ACTIVE",
+    "claimType": "RESOURCE",
+    "valueType": "EXPRESSION",
+    "value": "user.customclaimval",
+    "conditions": {
+      "scopes": [
+        "test-condition-scope"
+      ]
+    },
+    "system": false,
+    "alwaysIncludeInToken": true,
+    "_links": {
+      "self": {
+        "href": "https://testorganisation.okta.com/api/v1/authorizationServers/exampleOktaUniqueAuthServerId/claims/testclaimid1",
+        "hints": {
+          "allow": [
+            "GET",
+            "PUT",
+            "DELETE"
+          ]
+        }
+      }
+    }
+  }
+]

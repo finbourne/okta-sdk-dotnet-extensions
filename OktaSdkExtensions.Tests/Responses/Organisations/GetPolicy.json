@@ -1,0 +1,26 @@
+{
+  "tokenLifetime": {
+    "idleSession": 120,
+    "activation": 168
+  },
+  "jitProvisioning": {
+    "enabled": true
+  },
+  "accountRecovery": {
+    "smsPasswordReset": false
+  },
+  "idpSettings": {
+    "defaultIdp": "Dummy"
+  },
+  "visibility": {
+    "hide": {
+      "rememberMe": false,
+      "lockedStatus": true
+    }
+  },
+  "_links": {
+    "organization": {
+      "href": "https://testorganisation.okta.com/api/v1/orgs/testorganisation"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "adminManaged": true,
+  "enabledGroup": "enabledGroupId",
+  "preventBrowserPasswordSave": true,
+  "preventBrowserOktaPasswordSave": true,
+  "antiPhishingEnabled": true,
+  "antiPhishingWhiteListedUrls": null,
+  "warningState": null
+}

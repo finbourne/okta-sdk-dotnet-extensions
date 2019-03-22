@@ -1,0 +1,25 @@
+{
+  "organization": {
+    "streetAddress": [
+      "123 Example Road, London",
+      ""
+    ],
+    "locality": "London",
+    "postalCode": "SW1A 1AA",
+    "country": "GBR"
+  },
+  "support": {
+    "phoneNumber": "0123456789"
+  },
+  "_links": {
+    "technical": {
+      "href": "https://testorganisation.okta.com/api/v1/orgs/testorganisation/contacts/technical"
+    },
+    "organization": {
+      "href": "https://testorganisation.okta.com/api/v1/orgs/testorganisation"
+    },
+    "billing": {
+      "href": "https://testorganisation.okta.com/api/v1/orgs/testorganisation/contacts/billing"
+    }
+  }
+}

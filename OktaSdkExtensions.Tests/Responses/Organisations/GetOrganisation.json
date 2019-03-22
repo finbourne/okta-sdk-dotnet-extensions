@@ -1,0 +1,47 @@
+{
+  "id": "UniqueOktaIdCode123",
+  "subdomain": "testorganisation",
+  "name": "Test Organisation",
+  "website": "https://testorganisation.com",
+  "status": "ACTIVE",
+  "edition": "SKU",
+  "expiresAt": null,
+  "created": "2017-02-27T08:47:48.000Z",
+  "lastUpdated": "2019-03-01T03:01:06.000Z",
+  "licensing": {
+    "apps": [
+      "testOrgApplication"
+    ]
+  },
+  "settings": {
+    "app": {
+      "errorRedirectUrl": "https://errorRedirectUrl",
+      "interstitialUrl": "https://interstitialUrl",
+      "interstitialMinWaitTime": 1200
+    },
+    "userAccount": {
+      "attributes": {
+        "secondaryEmail": true,
+        "secondaryImage": true
+      }
+    },
+    "portal": {
+      "errorRedirectUrl": "https://portalErrorRedirectUrl",
+      "signOutUrl": "https://portalSignOutUrl"
+    },
+    "logs": {
+      "level": "INFO"
+    }
+  },
+  "_links": {
+    "organization": {
+      "href": "https://testorganisation.okta.com/api/v1/orgs/testorganisation"
+    },
+    "contacts": {
+      "href": "https://testorganisation.okta.com/api/v1/orgs/testorganisation/contacts"
+    },
+    "policy": {
+      "href": "https://testorganisation.okta.com/api/v1/orgs/testorganisation/policy"
+    }
+  }
+}

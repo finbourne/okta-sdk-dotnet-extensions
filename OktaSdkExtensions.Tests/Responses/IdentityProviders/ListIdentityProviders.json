@@ -1,0 +1,122 @@
+[
+  {
+    "id": "uniqueidpidentifier",
+    "type": "SAML2",
+    "name": "Example other Okta Tenant",
+    "status": "ACTIVE",
+    "created": "2017-11-01T14:36:20.000Z",
+    "lastUpdated": "2019-01-17T01:02:30.000Z",
+    "protocol": {
+      "type": "SAML2",
+      "endpoints": {
+        "sso": {
+          "url": "https://exampleremoteorganisation.okta.com/app/okta_org2org/remoteorganisationssosamlid/sso/saml",
+          "binding": "HTTP-POST",
+          "destination": "https://exampleremoteorganisation.okta.com/app/okta_org2org/remoteorganisationssosamlid/sso/saml"
+        },
+        "acs": {
+          "binding": "HTTP-POST",
+          "type": "INSTANCE"
+        }
+      },
+      "algorithms": {
+        "request": {
+          "signature": {
+            "algorithm": "SHA-256",
+            "scope": "REQUEST"
+          }
+        },
+        "response": {
+          "signature": {
+            "algorithm": "SHA-256",
+            "scope": "ANY"
+          }
+        }
+      },
+      "settings": {
+        "nameFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+      },
+      "credentials": {
+        "trust": {
+          "issuer": "http://www.okta.com/credentialstrustissueroktaid",
+          "audience": "https://www.okta.com/saml2/service-provider/oktasaml2serviceproviderid",
+          "kid": "examplecredentialkidid",
+          "revocation": "example revocation value",
+          "revocationCacheLifetime": 0
+        },
+        "signing": {
+          "kid": "examplekid"
+        }
+      }
+    },
+    "policy": {
+      "provisioning": {
+        "action": "AUTO",
+        "profileMaster": true,
+        "groups": {
+          "action": "ASSIGN",
+          "assignments": [
+            "exampleassignmentgroupid"
+          ]
+        },
+        "conditions": {
+          "deprovisioned": {
+            "action": "NONE"
+          },
+          "suspended": {
+            "action": "NONE"
+          }
+        }
+      },
+      "accountLink": {
+        "filter": "example account link filter",
+        "action": "AUTO"
+      },
+      "subject": {
+        "userNameTemplate": {
+          "template": "idpuser.subjectNameId"
+        },
+        "filter": "example filter",
+        "matchType": "USERNAME",
+        "matchAttribute": "example match attribute"
+      },
+      "maxClockSkew": 120000
+    },
+    "_links": {
+      "metadata": {
+        "href": "https://exampleorganisation.okta.com/api/v1/idps/uniqueidpidentifier/metadata.xml",
+        "type": "application/xml",
+        "hints": {
+          "allow": [
+            "GET"
+          ]
+        }
+      },
+      "acs": {
+        "href": "https://exampleorganisation.okta.com/sso/saml2/uniqueidpidentifier",
+        "type": "application/xml",
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        }
+      },
+      "users": {
+        "href": "https://exampleorganisation.okta.com/api/v1/idps/uniqueidpidentifier/users",
+        "hints": {
+          "allow": [
+            "GET"
+          ]
+        }
+      },
+      "deactivate": {
+        "href": "https://exampleorganisation.okta.com/api/v1/idps/uniqueidpidentifier/lifecycle/deactivate",
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        }
+      }
+    }
+  }
+]

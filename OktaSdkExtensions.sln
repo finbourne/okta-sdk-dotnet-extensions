@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OktaSdkExtensions", "OktaSdkExtensions\OktaSdkExtensions.csproj", "{2B7B7206-51AF-491A-BBC8-E1F14D0D2021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OktaSdkExtensions.Tests", "OktaSdkExtensions.Tests\OktaSdkExtensions.Tests.csproj", "{A3D4D599-1C9B-444B-BEA4-E2AD9D600841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B7B7206-51AF-491A-BBC8-E1F14D0D2021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7B7206-51AF-491A-BBC8-E1F14D0D2021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7B7206-51AF-491A-BBC8-E1F14D0D2021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7B7206-51AF-491A-BBC8-E1F14D0D2021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D4D599-1C9B-444B-BEA4-E2AD9D600841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D4D599-1C9B-444B-BEA4-E2AD9D600841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D4D599-1C9B-444B-BEA4-E2AD9D600841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D4D599-1C9B-444B-BEA4-E2AD9D600841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
