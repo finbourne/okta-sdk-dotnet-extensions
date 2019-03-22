@@ -1,3 +1,6 @@
+:warning: __This code is not yet planned to be actively maintained in this repo and could be removed without warning. If you're interested on using or working on this code please get in touch.__
+
+
 # Extensions to the Okta.SDK
 
 This project contains our extensions to Okta's published .NET SDK. These were created in order to take advantage of features that Okta expose through their APIs but haven't yet included in their .NET SDK.
