@@ -2,6 +2,8 @@
 
 
 # Extensions to the Okta.SDK
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffinbourne%2Fokta-sdk-dotnet-extensions.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffinbourne%2Fokta-sdk-dotnet-extensions?ref=badge_shield)
+
 
 This project contains our extensions to Okta's published .NET SDK. These were created in order to take advantage of features that Okta expose through their APIs but haven't yet included in their .NET SDK.
 
@@ -40,3 +42,7 @@ var trustedOrigin = await client.TrustedOrigins().CreateTrustedOrigin(options, C
 ```
 
 As usage of the extensions is done through the existing SDK client, the configuration requirements and process are consistent with what they are for the base Okta .NET SDK. 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffinbourne%2Fokta-sdk-dotnet-extensions.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffinbourne%2Fokta-sdk-dotnet-extensions?ref=badge_large)
