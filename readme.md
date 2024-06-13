@@ -1,3 +1,5 @@
+![LUSID_by_Finbourne](./resources/Finbourne_Logo_Teal.svg)
+
 :warning: __This code is not yet planned to be actively maintained in this repo and could be removed without warning. If you're interested on using or working on this code please get in touch.__
 
 
